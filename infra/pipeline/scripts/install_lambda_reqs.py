@@ -1,3 +1,4 @@
+# pylint: disable=inconsistent-return-statements,unused-variable,no-untyped-def
 """This is the script to install the dependencies needed for the lambdas to run."""
 import logging
 import os
@@ -12,7 +13,6 @@ logging.info("Starting script in %s", ROOT_DIR)
 # noinspection PyTypeChecker
 def get_src_directory():
     """Get relative path to /src location."""
-    # pylint: disable=inconsistent-return-statements,unused-variable
     logging.info("Getting path to /src location.")
     for dirname, dirnames, _ in os.walk(ROOT_DIR):
         for source_dir in dirnames:
