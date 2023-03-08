@@ -14,9 +14,9 @@ on:
       - .gitignore
       - .whitesource
 
-  # pull_request:
-  #   branches:
-  #     - master
+  pull_request:
+    branches:
+      - master
 
 
 #==============================================================
