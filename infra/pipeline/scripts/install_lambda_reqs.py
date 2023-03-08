@@ -1,4 +1,4 @@
-# pylint: disable=inconsistent-return-statements,unused-variable,no-untyped-def
+# pylint: disable=inconsistent-return-statements,unused-variable
 """This is the script to install the dependencies needed for the lambdas to run."""
 import logging
 import os
