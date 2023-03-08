@@ -26,7 +26,7 @@ class MainProjectStack(aws_cdk.Stack):
             id='apigateway-crud',
             table_name='product-inventory',
             partition_key=dynamodb.Attribute(
-                                             name='productid',
-                                             type=dynamodb.AttributeType.STRING
-                                            )
+                name='productid',
+                type=dynamodb.AttributeType.STRING
+            )
         )
