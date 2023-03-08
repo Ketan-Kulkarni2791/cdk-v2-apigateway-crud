@@ -19,11 +19,14 @@ class MainProjectStack(aws_cdk.Stack):
     def create_stack(stack: aws_cdk.Stack, env: str, config: dict) -> None:
         """Create and add the resources to the application stack"""
 
+        print(env)
+        print(config)
         dynamodb.Table(
             stack,
             id='apigateway-crud',
             table_name='product-inventory',
-            partition_key=dynamodb.Attribute(name='productid',
+            partition_key=dynamodb.Attribute(
+                                             name='productid',
                                              type=dynamodb.AttributeType.STRING
                                             )
         )
